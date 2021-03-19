@@ -28,10 +28,10 @@ async def ytdl(_, message):
                                      timedelta(minutes=youtube_next_fetch)
 
     except Exception:
-        await message.reply_text("`Failed To Fetch Youtube Data ... Possible Youtube Blocked server IP \n#error`")
+        await message.reply_text("`Failed To Fetch Youtube Data ... Possible Youtube Blocked server IP \n#error` Contact @VkP_BOTS")
         return
     buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
-    sentm = await message.reply_text("Processing YouTube URL ..")
+    sentm = await message.reply_text("Processing⏳..")
     try:
         # Todo add webp image support in thumbnail by default not supported by pyrogram
         # https://www.youtube.com/watch?v=lTTajzrSkCw
